@@ -20,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "José Vinicius",
+  title: "Prazer, Vini!",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Estudante de Engenharia da Computação na UFPE 🧠 | Pesquisador em IA com foco em dados, aprendizado de máquina e cibersegurança 🔬📊"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/jvss2",
+  linkedin: "https://www.linkedin.com/in/jose-vinicius-souza/",
+  gmail: "jvss2@cin.ufpe.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,158 +48,177 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
+  title: "O que eu faço",
+  subTitle:
+    "Pesquisador em IA e estudante de Engenharia da Computação, apaixonado por dados, aprendizado de máquina e segurança cibernética 🧠💻",
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  skills: [
+    emoji("⚡ Desenvolvimento e avaliação de modelos de machine learning aplicados a problemas reais como detecção de malware e anomalias"),
+    emoji("⚡ Análise exploratória de dados, visualização, engenharia de atributos e balanceamento de conjuntos de dados"),
+    emoji("⚡ Pesquisa e projetos em PLN, como detecção de fake news e discurso de ódio"),
+    emoji("⚡ Experiência com técnicas de ensemble learning, metaclassificação e redes adversariais"),
+    emoji("⚡ Automação de experimentos com Jupyter e scripts Python em plataformas como Google Colab e Azure")
+  ],
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "TensorFlow",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "Scikit-learn",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "Pandas",
+      fontAwesomeClassname: "fas fa-table"
+    },
+    {
+      skillName: "NumPy",
+      fontAwesomeClassname: "fas fa-square-root-alt"
+    },
+    {
+      skillName: "Seaborn",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Jupyter",
+      fontAwesomeClassname: "fas fa-book"
+    },
+    {
+      skillName: "Google Colab",
+      fontAwesomeClassname: "fas fa-cloud"
+    },
+    {
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "NLTK",
+      fontAwesomeClassname: "fas fa-language"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+
+  display: true
 };
+
+
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Universidade Federal de Pernambuco (UFPE)",
+      logo: require("./assets/images/logo-ufpe.jpg"), // Substitua pelo caminho do logo se tiver
+      subHeader: "Bacharelado em Engenharia da Computação",
+      duration: "agosto de 2019 - Presente",
+      desc: "Envolvido em projetos de pesquisa nas áreas de Inteligência Artificial, Aprendizado de Máquina, Segurança Cibernética e Processamento de Linguagem Natural.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+        "Publicação na área de detecção de malware com IA",
+        "Projetos envolvendo detecção de anomalias em redes e PLN (fake news, discurso de ódio)",
+        "Experiência com redes adversariais, ensemble learning e metaclassificação"
+      ],
     }
   ]
 };
+
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Machine Learning / IA",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Backend",
+      Stack: "Análise de Dados & Visualização",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Programação em Python",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Segurança Cibernética",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Processamento de Linguagem Natural (PLN)",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "Engenharia de Software / Scripts Automatizados",
+      progressPercentage: "65%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
+
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Pesquisador de Iniciação Científica Independente",
+      company: "Universidade Federal de Pernambuco (UFPE)",
+      companylogo: require("./assets/images/logo-ufpe.jpg"),
+      date: "2023 – presente",
+      desc: "Pesquisa independente na área de detecção de malware e segurança da informação utilizando técnicas de aprendizado de máquina.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Desenvolvimento e avaliação de modelos de classificação (ML) para detecção de códigos maliciosos",
+        "Utilização de metaclassificação e ensemble learning para aumentar a precisão",
+        "Coautoria de artigo científico publicado em periódico na área"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Bolsista de Pesquisa (FAPESQ / PET)",
+      company: "Universidade Federal de Pernambuco (UFPE)",
+      companylogo: require("./assets/images/logo-ufpe.jpg"),
+      date: "Março 2024 – Maio 2024",
+      desc: "Atuei no projeto de detecção de falhas em componentes veiculares, usando análise de sensores e séries temporais.",
+      descBullets: [
+        "Limpeza, análise e preparação de dados de sensores embarcados",
+        "Aplicação de modelos preditivos para identificação de falhas com TensorFlow",
+        "Pesquisa com base em benchmarks da literatura e validação dos modelos"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      role: "Pesquisador de Iniciação Científica (remoto)",
+      company: "AGRLAB / Startup educacional",
+      companylogo: require("./assets/images/AGRLab-logo.png"), // Substitua por um logo ou imagem simbólica
+      date: "2022 – 2023",
+      desc: "Criação de conteúdos e roteiros interativos para um jogo educacional voltado à área de Gerência de Projetos.",
+      descBullets: [
+        "Desenvolvimento de narrativas técnicas baseadas no PMBOK",
+        "Adaptação de conceitos acadêmicos para ambientes lúdicos digitais",
+        "Contribuição em equipe remota com entregas regulares e reuniões de planejamento"
+      ]
+    },
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -212,90 +231,57 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Grandes Projetos",
+  subtitle: "Pesquisas e iniciativas acadêmicas com impacto na área de IA e dados",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/ssciLogo.webp"), // você pode usar um ícone genérico como "research.png"
+      projectName: "Detecção de Malware com Machine Learning",
+      projectDesc:
+        "Pesquisa apresentada na conferência SSCI 2025 (IEEE) na Noruega, propondo técnicas de classificação para detecção de malware com metaclassificação e ensemble learning.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Acesse no arXiv",
+          url: "https://arxiv.org/abs/2504.00041"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/logo-ufpe.jpg"), // outro ícone genérico, ou algo que represente NLP
+      projectName: "Detecção de Fake News com PLN",
+      projectDesc:
+        "Projeto aceito no BRASNaM 2025 (Maceió), utilizando modelos clássicos de PLN para detectar desinformação em notícias curtas em português.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Apresentação em breve no BRASNaM",
+          url: "" // pode adicionar o link do arXiv ou evento depois
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Conquistas e Certificações 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Minhas principais conquistas, certificações, prêmios e alguns projetos de destaque que realizei!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Artigo Científico Publicado 📄",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Co-autor de um artigo que apresenta a técnica 'Bootstrap-based Balance', um método para balancear algoritmos de ensemble visando a melhoria na performance de detecção.",
+      image: require("./assets/images/ssciLogo.webp"),
+      imageAlt: "Logo SSCI",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Ver Artigo no arXiv",
+          url: "https://arxiv.org/abs/2504.00041"
         }
       ]
     }
@@ -324,26 +310,26 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Apresentações",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "Compartilhando conhecimento e colecionando crachás de palestrante 🎤"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Detecção de Fake News",
+      subtitle: "Palestra na Semana da Computação (Secomp) - CIn/UFPE",
+      slides_url: "https://www.canva.com/design/DAGX4pMR3O4/RzEoGH7PKYoUZWVJkyncGw/view?utm_content=DAGX4pMR3O4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2f1041af41",
+      event_url: "https://secomp.cin.ufpe.br"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Podcast Section
@@ -356,34 +342,33 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  title: "Currículo",
+  subtitle: "Faça o download da minha versão mais recente",
+  resume_url: "https://link-para-seu-curriculo.com/cv.pdf", // O link que você me fornecer entrará aqui
+  display: true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contato ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Estou disponível para novos projetos ou um simples bate-papo. Fique à vontade para me contatar.",
+  // number: "", // Removido pois não foi fornecido
+  email_address: "jvss2@cin.ufpe.br"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
