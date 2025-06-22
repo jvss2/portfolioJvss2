@@ -1,13 +1,16 @@
+// C:\Users\josev\portfolioJvss2\src\containers\greeting\Greeting.js
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+// Remova essas linhas:
+// import landingPerson from "../../assets/lottie/landingPerson";
+// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import NautilusGLBViewer from "../../components/NautilusGLBViewer/NautilusGLBViewer"; // Importe o seu novo componente
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import NautilusSticker from "../../assets/images/NautilusSticker.gif"; // Mantenha seu GIF
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -25,7 +28,13 @@ export default function Greeting() {
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                <span className="wave-emoji">
+                  <img
+                    src={NautilusSticker}
+                    alt="Nautilus Sticker"
+                    className="pulsing-sticker"
+                  />
+                </span>
               </h1>
               <p
                 className={
@@ -53,14 +62,11 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
+            <NautilusGLBViewer
+              modelPath="/nautilusIdle1.glb" // Caminho para o modelo do Nautilus
+              scale={0.01}
+              position={[0, -0.5, 0]}
+            />
           </div>
         </div>
       </div>
