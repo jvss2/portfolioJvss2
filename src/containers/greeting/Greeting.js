@@ -2,9 +2,6 @@
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import "./Greeting.scss";
-// Remova essas linhas:
-// import landingPerson from "../../assets/lottie/landingPerson";
-// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import NautilusGLBViewer from "../../components/NautilusGLBViewer/NautilusGLBViewer"; // Importe o seu novo componente
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
