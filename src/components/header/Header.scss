@@ -25,6 +25,10 @@
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header ul {
@@ -51,13 +55,20 @@
 }
 
 .header .logo {
-  display: block;
-  flex: none;
-  float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 0;
   line-height: normal;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.splash-logo {
+  // Tamanho padrão para telas maiores (desktop) antes da primeira media query
+  max-width: 200px; // Mantenha este como o tamanho de desktop grande se quiser
+  height: auto;
+  display: block;
 }
 
 .header .logo-name {
@@ -69,15 +80,15 @@
 }
 
 /* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  width: 100%;
+  flex-direction: column;
 }
 
 /* menu icon */
-
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -131,13 +142,13 @@
 }
 
 /* menu btn */
-
 .header .menu-btn {
   display: none;
 }
 
 .header .menu-btn:checked ~ .menu {
   max-height: 486px;
+  display: flex;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -163,18 +174,55 @@
   .header li {
     float: left;
   }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   .header .menu {
     max-height: none;
+    width: auto;
+    flex-direction: row;
+    margin-left: auto;
+    clear: none;
   }
   .header .menu-icon {
     display: none;
   }
+
+  // --- AQUI VOCÊ TINHA 200px ---
+  .splash-logo {
+    max-width: 200px; /* Mantenha este tamanho para desktops grandes, se desejar */
+  }
 }
+
+// Media query para telas menores que 768px (tablets e celulares maiores)
+@media (max-width: 767px) {
+  .header {
+    justify-content: space-between;
+  }
+  // --- AQUI ESTÁ A MUDANÇA PRINCIPAL! AUMENTE ESTE VALOR ---
+  .splash-logo {
+    max-width: 150px; /* AUMENTADO! Exemplo: de 100px para 150px para telas de tablet/celular grande */
+  }
+  .header .menu-icon {
+    display: block;
+  }
+  .header .menu {
+    flex-basis: 100%;
+    order: 1;
+    margin-top: 10px;
+    background-color: var(--header-bg-color, $lightBackground1);
+    padding: 0 20px;
+  }
+}
+
+// Media query para telas muito pequenas (celulares menores)
+@media (max-width: 480px) {
+  // --- AQUI ESTÁ OUTRA MUDANÇA! AUMENTE ESTE VALOR ---
+  .splash-logo {
+    max-width: 150px; /* AUMENTADO! Exemplo: de 80px para 120px para celulares pequenos */
+  }
+  .header {
+    padding: 10px 15px;
+  }
+}
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;

@@ -323,7 +323,7 @@ const talkSection = {
 
   talks: [
     {
-      title: "Detecção de Fake News",
+      title: "Vantagens e os Desafios da IA no Combate à Fake News",
       subtitle: "Palestra na Semana da Computação (Secomp) - CIn/UFPE",
       slides_url: "https://www.canva.com/design/DAGX4pMR3O4/RzEoGH7PKYoUZWVJkyncGw/view?utm_content=DAGX4pMR3O4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2f1041af41",
       event_url: "https://secomp.cin.ufpe.br"

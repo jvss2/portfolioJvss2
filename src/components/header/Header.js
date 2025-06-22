@@ -13,6 +13,7 @@ import {
   achievementSection,
   resumeSection
 } from "../../portfolio";
+import NautJVLogoPNG from "../../assets/images/NautJVLogo.png"; 
 
 function Header() {
   const {isDark} = useContext(StyleContext);
@@ -28,9 +29,7 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <img src={NautJVLogoPNG} alt="NautJV Logo" className="splash-logo" /> 
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -43,7 +42,7 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Habilidade</a>
+              <a href="#skills">Habilidades</a>
             </li>
           )}
           {viewExperience && (
@@ -73,7 +72,7 @@ function Header() {
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Curriculo</a>
+              <a href="#resume">Currículo</a>
             </li>
           )}
           <li>
